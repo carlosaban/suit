@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C70AF113-2DCC-4195-99A9-8220AF83F273}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SUIT.Pago.BE.n</RootNamespace>
+    <AssemblyName>SUIT.Pago.BE.n</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BE_Bank.cs" />
+    <Compile Include="BE_BankAccount.cs" />
+    <Compile Include="BE_BankMaster.cs" />
+    <Compile Include="BE_Company.cs" />
+    <Compile Include="BE_CompanyType.cs" />
+    <Compile Include="BE_CostCenter.cs" />
+    <Compile Include="BE_Invoice.cs" />
+    <Compile Include="BE_InvoiceDetail.cs" />
+    <Compile Include="BE_InvoiceItem.cs" />
+    <Compile Include="BE_InvoiceLog.cs" />
+    <Compile Include="BE_InvoiceStatus.cs" />
+    <Compile Include="BE_Logins.cs" />
+    <Compile Include="BE_Parameter.cs" />
+    <Compile Include="BE_ParameterDetail.cs" />
+    <Compile Include="BE_Payment.cs" />
+    <Compile Include="BE_PaymentAuth.cs" />
+    <Compile Include="BE_PaymentDetail.cs" />
+    <Compile Include="BE_PaymentMethod.cs" />
+    <Compile Include="BE_RoleClaims.cs" />
+    <Compile Include="BE_UserClaims.cs" />
+    <Compile Include="BE_UserToken.cs" />
+    <Compile Include="BE_PaymentAuthDetail.cs" />
+    <Compile Include="BE_WorkFlow.cs" />
+    <Compile Include="BE_WorkFlowDetail.cs" />
+    <Compile Include="BE_DocumentType.cs" />
+    <Compile Include="Filters\BECompanyFilter.cs" />
+    <Compile Include="Filters\BEInvoiceFilter.cs" />
+    <Compile Include="Filters\BEPaymentFilter.cs" />
+    <Compile Include="MailContent.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VE_Bank.cs" />
+    <Compile Include="VE_BankAccount.cs" />
+    <Compile Include="VE_Invoice.cs" />
+    <Compile Include="VE_InvoiceDetail.cs" />
+    <Compile Include="VE_Payment.cs" />
+    <Compile Include="VE_PaymentAuth.cs" />
+    <Compile Include="VE_PaymentAuthDetail.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

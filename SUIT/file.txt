@@ -1,0 +1,3 @@
+2019-01-20 22:26:13.5955|DEBUG|SUIT.Controllers.InvoiceController|hello world GetInvoice
+2019-01-20 22:26:35.3847|DEBUG|SUIT.Controllers.InvoiceController|hello world GetInvoice
+2019-01-20 22:27:53.7982|INFO|SUIT.Controllers.InvoiceController|hello world GetInvoice
